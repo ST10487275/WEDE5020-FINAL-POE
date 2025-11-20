@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet LionHeart — Order</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body class="order-page">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="SweetLionHeart.html"><b>Home</b></a></li>
+        <li><a href="AboutUs.html"><b>About Us</b></a></li>
+        <li><a href="Shop.html"><b>Shop</b></a></li>
+        <li><a href="ContactUs.html"><b>Contact Us</b></a></li>
+        <li><a href="News.html"><b>News</b></a></li>
+        <li><a href="Cart.html"><b>Cart (<span id="cart-count">0</span>)</b></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="order">
+      <h2>Order Details</h2>
+
+      <div class="order-layout">
+        <div class="order-image">
+          <img id="product-image" src="" alt="Selected product" width="350" height="250">
+        </div>
+
+        <div class="order-info">
+          <h3 id="product-name">Product Name</h3>
+          <p>Base (medium vanilla) price: <span id="base-price">R0.00</span></p>
+
+          <form id="order-form">
+            <div class="order-field">
+              <label for="size-select">Size:</label>
+              <select id="size-select" required>
+                <option value="medium" selected>Medium (default)</option>
+                <option value="small">Small (-20%)</option>
+                <option value="large">Large (+35%)</option>
+              </select>
+            </div>
+
+            <div class="order-field">
+              <label for="flavour-select">Flavour:</label>
+              <select id="flavour-select" required>
+                <option value="vanilla" data-extra="0" selected>Vanilla (included)</option>
+                <option value="chocolate" data-extra="50">Chocolate (+R50)</option>
+                <option value="red-velvet" data-extra="65">Red Velvet (+R65)</option>
+                <option value="caramel" data-extra="80">Caramel (+R80)</option>
+              </select>
+            </div>
+
+            <div class="order-field">
+              <label for="quantity-input">Quantity:</label>
+              <input type="number" id="quantity-input" min="1" value="1">
+            </div>
+
+            <div class="order-field">
+              <label for="special-instructions">Special Instructions (allergies, notes, etc.):</label>
+              <textarea id="special-instructions" rows="3" placeholder="Type any special instructions here..."></textarea>
+            </div>
+
+            <p>
+              Price per item: <span id="price-per-item">R0.00</span><br>
+              Total: <span id="final-price">R0.00</span>
+            </p>
+
+            <button type="button" id="add-to-cart-btn">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-section brand">
+        <h2>Sweet LionHeart</h2>
+        <p>Beautiful cakes, classes and creativity — made with love.</p>
+      </div>
+
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="MyAccount.html">My Account</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="ContactUs.html">Get In Touch</a></li>
+          <li><a href="#">Refund & Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section hours">
+        <h3>Operational Hours</h3>
+        <li><span class="day">Monday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Tuesday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Wednesday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Thursday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Friday</span><span class="time">9:00 – 16:00</span></li>
+        <li><span class="day">Saturday</span><span class="time">10:00 – 14:00</span></li>
+        <li><span class="day">Sunday</span><span class="time">Closed</span></li>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>Have a Question?</h3>
+        <form>
+          <input type="text" placeholder="Name & Surname*">
+          <input type="email" placeholder="Email Address*">
+          <textarea placeholder="Type your message here*"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; ST10487275. 2025 Sweet LionHeart. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="JavaScript/Script.js"></script>
+</body>
+</html>

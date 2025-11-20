@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Account</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body class="account-page">
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="SweetLionHeart.html"><b>Home</b></a></li>
+      <li><a href="AboutUs.html"><b>About Us</b></a></li>
+      <li><a href="Shop.html"><b>Shop</b></a></li>
+      <li><a href="ContactUs.html"><b>Contact Us</b></a></li>
+      <li><a href="News.html"><b>News</b></a></li>
+      <li><a href="Cart.html"><b>Cart (<span id="cart-count">0</span>)</b></a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="form-wrapper">
+  <h2>My Account</h2>
+
+  <p><b>Username:</b> <span id="acc-username"></span></p>
+  <p><b>Contact:</b> <span id="acc-contact"></span></p>
+
+  <button id="edit-btn">Edit Info</button>
+  <button id="logout-btn">Logout</button>
+</div>
+
+<div class="form-wrapper" id="edit-section" style="display:none;">
+  <h2>Edit Details</h2>
+
+  <label>New Username</label>
+  <input type="text" id="edit-username">
+
+  <label>New Contact</label>
+  <input type="text" id="edit-contact">
+
+  <label>New Password</label>
+  <input type="password" id="edit-password">
+
+  <label>Confirm Password</label>
+  <input type="password" id="edit-password-confirm">
+
+  <button id="save-edit-btn">Save Changes</button>
+</div>
+
+<script src="JavaScript/Script.js"></script>
+</body>
+</html>

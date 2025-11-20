@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body class="register-page">
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="SweetLionHeart.html"><b>Home</b></a></li>
+      <li><a href="AboutUs.html"><b>About Us</b></a></li>
+      <li><a href="Shop.html"><b>Shop</b></a></li>
+      <li><a href="ContactUs.html"><b>Contact Us</b></a></li>
+      <li><a href="News.html"><b>News</b></a></li>
+      <li><a href="Cart.html"><b>Cart (<span id="cart-count">0</span>)</b></a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="form-wrapper">
+  <h2>Create Account</h2>
+
+  <form id="register-form">
+    <label>Email or Phone</label>
+    <input type="text" id="reg-contact">
+
+    <button type="button" id="send-otp-btn">Send OTP</button>
+    <div id="otp-message"></div>
+
+    <label>Enter OTP</label>
+    <input type="text" id="reg-otp">
+
+    <label>Username</label>
+    <input type="text" id="reg-username">
+
+    <label>Password</label>
+    <input type="password" id="reg-password">
+
+    <label>Confirm Password</label>
+    <input type="password" id="reg-confirm">
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p>Already have an account? 
+    <a href="Login.html">Login</a>
+  </p>
+</div>
+
+<script src="JavaScript/Script.js"></script>
+</body>
+</html>
+

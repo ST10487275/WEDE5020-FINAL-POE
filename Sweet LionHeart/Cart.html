@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet LionHeart — Cart</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body class="cart-page">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="SweetLionHeart.html"><b>Home</b></a></li>
+        <li><a href="AboutUs.html"><b>About Us</b></a></li>
+        <li><a href="Shop.html"><b>Shop</b></a></li>
+        <li><a href="ContactUs.html"><b>Contact Us</b></a></li>
+        <li><a href="News.html"><b>News</b></a></li>
+        <li><a href="Cart.html"><b>Cart (<span id="cart-count">0</span>)</b></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cart">
+      <h2>Your Cart</h2>
+
+      <p id="empty-cart-message">Your cart is currently empty.</p>
+
+      <div id="cart-content" style="display: none;">
+        <table id="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Details</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="cart-summary">
+          <p><strong>Cart Total: <span id="cart-total">R0.00</span></strong></p>
+          <button id="clear-cart-btn">Clear Cart</button>
+          <a href="Shop.html"><button type="button">Continue Shopping</button></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-section brand">
+        <h2>Sweet LionHeart</h2>
+        <p>Beautiful cakes, classes and creativity — made with love.</p>
+      </div>
+
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="MyAccount.html">My Account</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="ContactUs.html">Get In Touch</a></li>
+          <li><a href="#">Refund & Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section hours">
+        <h3>Operational Hours</h3>
+        <li><span class="day">Monday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Tuesday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Wednesday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Thursday</span><span class="time">9:00 – 17:00</span></li>
+        <li><span class="day">Friday</span><span class="time">9:00 – 16:00</span></li>
+        <li><span class="day">Saturday</span><span class="time">10:00 – 14:00</span></li>
+        <li><span class="day">Sunday</span><span class="time">Closed</span></li>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>Have a Question?</h3>
+        <form>
+          <input type="text" placeholder="Name & Surname*">
+          <input type="email" placeholder="Email Address*">
+          <textarea placeholder="Type your message here*"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; ST10487275. 2025 Sweet LionHeart. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="JavaScript/Script.js"></script>
+</body>
+</html>
